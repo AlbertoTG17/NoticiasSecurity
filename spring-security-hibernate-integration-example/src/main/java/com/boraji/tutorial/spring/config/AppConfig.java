@@ -1,5 +1,6 @@
 package com.boraji.tutorial.spring.config;
 
+
 import java.util.Properties;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import static org.hibernate.cfg.Environment.*;
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @ComponentScans(value = { @ComponentScan("com.boraji.tutorial.spring.dao"),
-    @ComponentScan("com.boraji.tutorial.spring.service") })
+@ComponentScan("com.boraji.tutorial.spring.service") })
 public class AppConfig {
 
   @Autowired
